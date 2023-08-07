@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the Number Game</title>
+    <!-- Import the Roboto font from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Game heading -->
+    <h1>Guess the Number Game</h1>
+    
+    <!-- Instruction for the user to guess a number -->
+    <p>Guess a number between 1 and 100:</p>
+    
+    <!-- Input field for the user to enter their guess -->
+    <input type="number" id="guessInput" placeholder="Enter your guess">
+    
+    <!-- Button to submit the guess -->
+    <button onclick="checkGuess()">Submit Guess</button>
+    
+    <!-- Display the game status message -->
+    <p id="message"></p>
+    
+    <!-- Container for the confetti animation -->
+    <div id="confetti-container"></div>
+    
+    <!-- Container for the restart button -->
+    <div class="restart-button-container">
+        <button onclick="restartGame()" id="restartButton" style="display: none;">Restart</button>
+    </div>
+    
+    <!-- Link to the external JavaScript file -->
+    <script src="index.js"></script>
+</body>
+</html>

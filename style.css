@@ -1,0 +1,115 @@
+/* CSS for the body of the number guessing game app */
+body {
+    font-family: "Roboto", Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    background-color: #000000; /* Set the background color to black */
+    color: #EEEEEE; /* Set the text color to light gray */
+}
+
+/* Styling for the heading of the app */
+h1 {
+    font-family: "Roboto", Arial, sans-serif;
+    font-weight: 700;
+    margin: 0;
+    padding: 20px 0;
+    background-color: #4E4FEB; /* Set the background color for the heading to a vibrant blue */
+    color: white; /* Set the text color for the heading to white */
+    font-size: 28px;
+}
+
+/* Styling for the input field */
+input {
+    font-family: "Roboto", Arial, sans-serif;
+    width: 200px;
+    height: 40px;
+    padding: 5px;
+    border: none;
+    background-color: #EEEEEE; /* Set the background color for the input field to light gray */
+    color: #000000; /* Set the text color for the input field to black */
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* Styling for the button */
+button {
+    font-family: "Roboto", Arial, sans-serif;
+    margin: 10px;
+    padding: 10px;
+    background-color: #068FFF; /* Set the background color for buttons to a bright blue */
+    color: white; /* Set the text color for buttons to white */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+/* Styling for the message display */
+#message {
+    font-family: "Roboto", Arial, sans-serif;
+    margin-top: 30px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Styling for the confetti animation */
+#confetti-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 1;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.confetti {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    opacity: 0.7;
+    border-radius: 50%;
+    animation: confetti-fall 3s linear infinite;
+}
+
+@keyframes confetti-fall {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(100vh);
+    }
+}
+
+/* Styling for the restart button container */
+.restart-button-container {
+    position: relative;
+    margin-top: 20px;
+}
+
+/* Styling for the restart button */
+#restartButton {
+    padding: 10px 20px;
+    background-color: #068FFF; /* Set the background color for the restart button to a bright blue */
+    color: white; /* Set the text color for the restart button to white */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 18px;
+    font-weight: 700;
+    box-shadow: 0 4px 8px rgb(77 248 237 / 50%); /* Add a subtle box shadow for the restart button */
+}
+
+/* CSS for responsive positioning */
+@media (max-width: 600px) {
+    .restart-button-container {
+        margin-top: 40px;
+    }
+}
